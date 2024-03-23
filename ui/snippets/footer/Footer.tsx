@@ -32,46 +32,16 @@ const Footer = () => {
   const issueUrl = useIssueUrl(backendVersionData?.backend_version);
   const BLOCKSCOUT_LINKS = [
     {
-      icon: 'edit' as const,
-      iconSize: '16px',
-      text: 'Submit an issue',
-      url: issueUrl,
-    },
-    {
-      icon: 'social/canny' as const,
-      iconSize: '20px',
-      text: 'Feature request',
-      url: 'https://blockscout.canny.io/feature-requests',
-    },
-    {
       icon: 'social/git' as const,
       iconSize: '18px',
-      text: 'Contribute',
-      url: 'https://github.com/blockscout/blockscout',
+      text: 'Github',
+      url: 'https://github.com/Sensorchain/',
     },
     {
       icon: 'social/tweet' as const,
       iconSize: '18px',
       text: 'Twitter',
-      url: 'https://www.twitter.com/blockscoutcom',
-    },
-    {
-      icon: 'social/discord' as const,
-      iconSize: '24px',
-      text: 'Discord',
-      url: 'https://discord.gg/blockscout',
-    },
-    {
-      icon: 'discussions' as const,
-      iconSize: '20px',
-      text: 'Discussions',
-      url: 'https://github.com/orgs/blockscout/discussions',
-    },
-    {
-      icon: 'donate' as const,
-      iconSize: '20px',
-      text: 'Donate',
-      url: 'https://github.com/sponsors/blockscout',
+      url: 'https://www.twitter.com/',
     },
   ];
 
@@ -118,9 +88,9 @@ const Footer = () => {
   const renderProjectInfo = React.useCallback((gridArea?: GridProps['gridArea']) => {
     return (
       <Box gridArea={ gridArea }>
-        <Link fontSize="xs" href="https://www.blockscout.com">blockscout.com</Link>
+        <Link fontSize="xs" href="https://www.sensorprotocol.com/">sensorprotocol.com</Link>
         <Text mt={ 3 } fontSize="xs">
-          Blockscout is a tool for inspecting and analyzing EVM based blockchains. Blockchain explorer for Ethereum Networks.
+          Sensor Protocol Transforming the frontier where Blockchain, AI and Spatial computing converge. Join us in our missing to abstract the physical and digital realms
         </Text>
         <VStack spacing={ 1 } mt={ 6 } alignItems="start">
           { apiVersionUrl && (
